@@ -18,10 +18,14 @@
 
   onFormSubmit: function(component, event, helper) {
     var boatTypeId = component.get("v.selectedType");
-    console.log(boatTypeId);
     var formSubmit = component.getEvent("FormSubmit");
-    formSubmit.setParams({ formData: { boatTypeId: boatTypeId } });
+    formSubmit.setParams({ formData: { boatTypeId } });
     formSubmit.fire();
+  },
+
+  boatTypeChange: function(component, event, helper) {
+    var boatType = event.getSource().get("v.value");
+    component.set("v.selectedType", boatType);
   },
     
   clickNew: function(component, event, helper) {

@@ -12,6 +12,7 @@
           aura:id="boatTypesSelect"
           label=""
           name="selectType"
+          onChange="boatTypeChange"
           value="{!v.selectedType}"
         >
           <option value="">All Types</option>

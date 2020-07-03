@@ -1,6 +1,6 @@
 public class getBoatTypes {
 @AuraEnabled
-    public static List<Boat__c> getBoats() {
-        return [SELECT Id, Name, Picture__c FROM Boat__c];
+    public static List<BoatType__c> getBoats() {
+        return [SELECT Id, Name FROM BoatType__c];
     }
 }
