@@ -16,7 +16,6 @@
         description: ""
       }
     ]);
-    console.log(latitude, longitude);
     component.set("v.zoomLevel", 10);
   }
 });

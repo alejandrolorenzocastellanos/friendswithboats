@@ -10,7 +10,7 @@
             } else if (state === "ERROR") {
                 var errors = response.getError();
                 if (!errors) {
-                    errors = [{"message" : "Unknown Error Occured"}];
+                    errors = [{"message" : "Error."}];
                 }
                 console.log(errors);
             }

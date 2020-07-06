@@ -1,9 +1,7 @@
 ({
-    
     doInit : function(component,event,helper) {
         helper.onInit(component,event,helper);
     },
-    
     onSave : function(component, event, helper) {
         component.find("service").saveRecord(function(saveResult) {
             if (saveResult.state === "SUCCESS" || saveResult.state === "DRAFT") {
@@ -11,11 +9,11 @@
                 if(result) {
                     result.setParams({
                         "title": "Saved",
-                        "message": "The record was saved."
+                        "message": "Saved."
                     });
                     result.fire();
                 } else {
-                    alert("The record was saved");
+                    alert("Saved.");
                 }            
                 var newBoatReviewAddedEvent = component.getEvent("BoatReviewAdded");
                 newBoatReviewAddedEvent.fire();
@@ -26,7 +24,6 @@
             }
         });
     },
-    
     onRecordUpdated : function (component, event , helper ) {
         var eventParams = event.getParams();
         if(eventParams.changeType === "CHANGED") {
@@ -34,11 +31,11 @@
             if(result) {
                 result.setParams({
                     "title": "Saved",
-                    "message": "The record was saved."
+                    "message": "Saved."
                 });
                 result.fire();
             } else {
-                alert("The record was saved");
+                alert("Saved.");
             }
         }
     }

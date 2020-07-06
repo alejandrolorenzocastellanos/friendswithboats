@@ -39,7 +39,7 @@
             </div>
         </lightning:layoutItem> 
         <lightning:layoutItem padding="around-small">
-            <lightning:button label="Submit" title="Review Submit" onclick="{! c.onSave }" iconName="utility:save" iconPosition="left" class="slds-align_absolute-center"/>
+            <lightning:button label="Submit" title="Review Submit" onclick="{!c.onSave}" iconName="utility:save" iconPosition="left" class="slds-align_absolute-center"/>
         </lightning:layoutItem>
     </lightning:layout>
 </aura:component>

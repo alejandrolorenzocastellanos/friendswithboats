@@ -5,13 +5,13 @@
     onUserInfoClick : function(component, event, helper) {
         var targetSource = event.currentTarget;
         var userid = targetSource.dataset.userid;
-        var navEvt = $A.get("e.force:navigateToSObject");
-        if (navEvt) {
-            navEvt.setParams({
+        var navEvent = $A.get("e.force:navigateToSObject");
+        if (navEvent) {
+            navEvent.setParams({
                 "recordId": userid,
                 "slideDevName": "detail"
             });
-            navEvt.fire();
+            navEvent.fire();
         }
         
     }

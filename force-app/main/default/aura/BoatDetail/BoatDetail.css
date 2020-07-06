@@ -8,6 +8,7 @@
 .THIS .imageview {
     background-repeat: no-repeat;
     background-size: contain;
-    height: 200px;
+    height: 300px;
+    width: 200px;
     margin: 2px;   
 }
