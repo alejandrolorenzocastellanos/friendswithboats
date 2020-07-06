@@ -9,8 +9,8 @@
     onclick="{!c.onBoatClick}"
   >
     <div
-      class="innertile"
       style="{!'background-image: url(' + v.boat.Picture__c + ')'}"
+      class="innertile"
     >
       <div class="lower-third">
         <h1 class="slds-truncate">{!v.boat.Contact__r.Name}</h1>
